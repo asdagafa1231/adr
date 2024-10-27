@@ -1,0 +1,177 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: normal;
+    text-align: center;
+    color: white;
+  }
+  .header{
+    padding-top: 40px;
+    background-color: black;
+    width: 100vw;
+  }
+  /* Cabeçalho */
+  .header::after {
+    content: "";
+    position: absolute; /* Posição absoluta em relação ao cabeçalho */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0;
+    height: 5px; /* Altura da borda */
+ background: linear-gradient(to right, yellow, orange, red, magenta, blue, green); /* Gradiente RGB */
+}
+
+
+.avatar{
+    width: 40px;
+}
+  
+  .logo {
+    float: center;
+    display: flex;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+  }
+  .gradient-bar {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, yellow, orange, red, magenta, blue, green);
+  }
+  
+  /* Informações do usuário */
+  .user-info {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    width: 100%;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-details p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Container do formulário */
+  .container {
+    background-color: white;
+    padding: 30px;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+  
+  /* Barra de progresso */
+  .progress-bar {
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .step {
+    background-color: #4EA900;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .step span {
+    font-size: 0.75em;
+    margin-top: 5px;
+  }
+  
+  .steps .step.active {
+    font-size: 1em;
+    width: 65px;
+    height: 65px;
+    font-weight: bold;
+  }
+  
+  /* Formulário */
+  .address-form .field {
+    margin-bottom: 15px;
+  }
+  
+  .address-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .address-form input[type="text"],
+  .address-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .cep-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .field-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .cancel {
+    background-color: #ccc;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .save {
+    background-color: #4EA900;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  .x{
+    text-decoration: none;
+    color: white;
+  }

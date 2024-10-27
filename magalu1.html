@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Magalu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <h1>Magalu</h1>
+    <div class="gradient-bar"></div>
+  </header>
+
+  <!-- Informações do usuário -->
+  <div class="user-info">
+    <img src="user.png" alt="User Avatar" class="avatar">
+    <div class="user-details">
+      <strong>primeblackfriday</strong>
+      <p>Influenciador Magalu</p>
+    </div>
+  </div>
+
+  <!-- Container principal do formulário -->
+  <div class="container">
+    <!-- Barra de progresso -->
+    <div class="progress-bar">
+      <ul class="steps">
+        <li class="step completed">
+          <span>Sacola</span>
+        </li>
+        <li class="step active">
+          <span>Identificação</span>
+        </li>
+        <li class="step">
+          <span>Entrega</span>
+        </li>
+        <li class="step">
+          <span>Pagamento</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Formulário de endereço -->
+    <form class="address-form">
+      <div class="field">
+        <label for="name">Nome Completo</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="field">
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" name="cpf" required>
+      </div>
+
+      <div class="field">
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+
+      <div class="field">
+        <label for="cep">CEP</label>
+        <div class="cep-container">
+          <input type="text" id="cep" name="cep" required>
+          <a href="https://buscacepinter.correios.com.br/app/endereco/index.php?t/">Não sei o CEP</a>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="address">Endereço</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="number">Número</label>
+          <input type="text" id="number" name="number">
+        </div>
+
+        <div class="field checkbox-container">
+          <input type="checkbox" id="no-number">
+          <label for="no-number">Sem número</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="complement">Complemento</label>
+        <input type="text" id="complement" name="complement">
+      </div>
+
+      <div class="field">
+        <label for="neighborhood">Bairro</label>
+        <input type="text" id="neighborhood" name="neighborhood" required>
+      </div>
+
+      <div class="field">
+        <label for="city">Cidade</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+
+      <div class="field">
+        <label for="state">Estado</label>
+        <input type="text" id="state" name="state" required>
+      </div>
+
+      <div class="field">
+        <label for="reference">Ponto de Referência</label>
+        <input type="text" id="reference" name="reference">
+      </div>
+
+      <div class="field default-address">
+        <input type="checkbox" id="default-address">
+        <label for="default-address">Definir como endereço padrão para próximas entregas</label>
+      </div>
+
+      <!-- Botões -->
+      <div class="buttons">
+        <button type="button" class="cancel">Cancelar</button>
+        <button type="submit" class="save"><a class="x" href="pagamento.html">Salvar e continuar</a></button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
